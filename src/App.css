@@ -2,4 +2,10 @@
     z-index: 9999; /* Set to a value higher than other page elements */
   }
 
+
+  .bg-stone {
+    background: linear-gradient( rgb(168 162 158), rgb(168 162 158) 200px, transparent 200px);
+  }
+  
+
  

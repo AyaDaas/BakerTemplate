@@ -6,10 +6,7 @@ import Button from "../component/core/Button"
 import Gallery from "../component/content/Gallery"
 import axios from 'axios'
 import { BiSolidQuoteAltRight } from 'react-icons/bi';
-import { FaFacebookF } from 'react-icons/fa';
-import { AiFillInstagram } from 'react-icons/ai';
 
-import { BsTwitter } from 'react-icons/bs';
 
 function LayoutPage() {
     const [data2, setData2] = useState([])
@@ -98,7 +95,7 @@ function LayoutPage() {
             <h3 className="md:text-6xl wow  animate__animated animate__rotateIn text-5xl text-black text-center font-bold mx-20">   Our Bread</h3>
             <p className="text-center wow  animate__rubberBand  animate__animated   text-2xl mx-20 mt-4">A values-driven bakery</p>
             <br /><br />
-            <div className=" wow  animate__animated animate__fadeIn">
+            <div className=" wow animate__delay-1s   animate__animated animate__fadeIn">
                 <Gallery images={images}></Gallery>
 
             </div>
@@ -152,7 +149,8 @@ function LayoutPage() {
 
                     <div>
 
-                        <PhotoHalfCircle className="rounded-r-full  wow  animate__backInLeft animate__delay-1s animate__animated   h-[500px] w-[500px]  lg:h-[600px] lg:w-[600px]" photo="../../public/assets/baker1.png"></PhotoHalfCircle>
+                        <PhotoHalfCircle className="rounded-r-full  wow  animate__fadeInLeft  animate__delay-1s animate__animated   h-[500px] w-[500px]  lg:h-[600px] lg:w-[600px]"
+                            photo="../../public/assets/baker3.png"></PhotoHalfCircle>
                     </div>
 
 
@@ -215,8 +213,8 @@ function LayoutPage() {
                     }
                 </div>
             </div>
-            <div className="relative bg-stone-400  h-[350px]">
-                <div className="py-24 absolute  bottom-0 top-0  text-start ">
+            <div className=" bg-stone ">
+                <div className="    bottom-0 -0  text-start ">
                     <div className="flex text-start md:mx-18  mx-12 bottom-129    flex-wrap justify-start ">
                         {data3.map((item, index) => (
                             <div className="lg:w-1/3 md:w-1/2 text-start wow  animate__backInLeft  animate__animated animate__delay-1s   left-0" key={index}>
@@ -283,129 +281,7 @@ function LayoutPage() {
                         </FlexTwo>
                     </div>
                     <br /><br />
-                    <div className="bg-black p-7   ">
-                        <div className="flex py-9 flex-col items-center">
-                            <div className="w-44 h-44 inline-block wow  animate__zoomIn  animate__animated animate__delay-1s  flex justify-center items-center">
-                                <img src="../../public/assets/logo.png" alt="Logo" />
-                            </div>                            </div>
 
-                        <br />
-                        <div className="flex justify-around text-center text-white items-center">
-                            <div className="md:w-1/4  w-1/2">
-                                <ul className="mb-0 text-white list-none">
-                                    HeadLine
-                                    <li className="my-2">
-                                        <a href="#!" className=" dark:text-neutral-200"
-                                        >Link </a
-                                        >
-                                    </li>
-                                    <li className="my-2">
-                                        <a href="#!" className="dark:text-neutral-200"
-                                        >Link </a
-                                        >
-                                    </li>
-                                    <li className="my-2">
-                                        <a href="#!" className=" dark:text-neutral-200"
-                                        >Link </a
-                                        >
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="md:w-1/4  w-1/2">
-                                <ul className="mb-0 text-white list-none">
-                                    HeadLine
-                                    <li className="my-2">
-                                        <a href="#!" className=" dark:text-neutral-200"
-                                        >Link </a
-                                        >
-                                    </li>
-                                    <li className="my-2">
-                                        <a href="#!" className="dark:text-neutral-200"
-                                        >Link </a
-                                        >
-                                    </li>
-                                    <li className="my-2">
-                                        <a href="#!" className=" dark:text-neutral-200"
-                                        >Link </a
-                                        >
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="md:w-1/4  w-1/2">
-                                <ul className="mb-0 text-white list-none">
-                                    HeadLine
-                                    <li className="my-2">
-                                        <a href="#!" className=" dark:text-neutral-200"
-                                        >Link 1</a
-                                        >
-                                    </li>
-                                    <li className="my-2">
-                                        <a href="#!" className="dark:text-neutral-200"
-                                        >Link 2</a
-                                        >
-                                    </li>
-                                    <li className="my-2">
-                                        <a href="#!" className=" dark:text-neutral-200"
-                                        >Link 3</a
-                                        >
-                                    </li>
-                                </ul>
-
-
-                            </div>
-                            <div className="md:w-1/4  w-1/2">
-                                <ul className="mb-0 text-white list-none">
-                                    HeadLine
-                                    <li className="my-2">
-                                        <a href="#!" className=" dark:text-neutral-200"
-                                        >Link </a
-                                        >
-                                    </li>
-                                    <li className="my-2">
-                                        <a href="#!" className="dark:text-neutral-200"
-                                        >Link </a
-                                        >
-                                    </li>
-                                    <li className="my-2">
-                                        <a href="#!" className=" dark:text-neutral-200"
-                                        >Link </a
-                                        >
-                                    </li>
-                                </ul>                               </div>
-
-
-
-                        </div>
-
-
-
-                        <br /> <br /><br />
-                        <div
-                            className="   flex   justify-center text-center text-stone-400 items-center  ">
-                            <h4 className="text-3xl mx-3">
-                                <FaFacebookF />
-                            </h4>
-                            <h4 className="text-3xl mx-3">
-
-                                <AiFillInstagram />
-                            </h4>
-
-                            <h4 className="text-3xl mx-3">
-
-                                <BsTwitter />
-                            </h4>
-
-
-                        </div>
-
-
-
-                    </div>
-                    <div
-                        className="w-full bg-stone-500 p-5   text-center text-white   ">
-                        © 2023 Copyright
-
-                    </div>
                 </div>
 
             </div>
